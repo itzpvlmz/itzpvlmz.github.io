@@ -1,54 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
-    
     <title>Logan Ancell | Game Developer</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Logan Ancell</h1>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">LOGAN ANCELL</a>
 
-    <h2>Game Developer | Gameplay Designer | Gameplay Programmer</h2>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-    <p>
-        Game Development student focused on gameplay systems,
-        creature design, systemic worlds, and interactive player experiences.
-    </p>
 
-    <h2>Projects</h2>
+    <!-- HERO -->
+    <header id="home" class="hero">
+        <div class="hero-content">
 
-    <h3>BOXELS</h3>
-    <p>
-        A creature-focused game project centered around exploration,
-        research, creature behaviors, progression, and worldbuilding.
-    </p>
+            <p class="eyebrow">GAME DEVELOPER • GAMEPLAY DESIGNER</p>
 
-    <h3>BOXELS EchoDex Prototype</h3>
-    <p>
-        A C++ gameplay prototype featuring creature research,
-        progression systems, researcher profiles, region unlocking,
-        and an interactive creature database.
-    </p>
+            <h1>
+                I build creatures,<br>
+                gameplay systems,<br>
+                and worlds.
+            </h1>
 
-    <h2>Skills</h2>
+            <p class="hero-description">
+                Game Development student focused on gameplay programming,
+                creature design, progression systems, and interactive
+                player experiences.
+            </p>
 
-    <p>
-        C++ | Gameplay Design | Systems Design | Creature Design |
-        Godot | Visual Studio | Git | GitHub
-    </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="button primary">View My Work</a>
 
-    <h2>Education</h2>
+                <a href="https://github.com/itzpvlmz"
+                   target="_blank"
+                   class="button secondary">
+                    GitHub
+                </a>
+            </div>
 
-    <p>
-        Bachelor of Science in Game Development<br>
-        Full Sail University<br>
-        2026 - Present
-    </p>
+        </div>
+    </header>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <p class="section-number">01 / ABOUT</p>
+
+        <h2>Designing systems players can discover.</h2>
+
+        <div class="about-grid">
+
+            <div>
+                <p>
+                    I'm Logan Ancell, a game development student and independent
+                    developer interested in the intersection between gameplay
+                    programming and game design.
+                </p>
+
+                <p>
+                    I enjoy developing systems that give players something to
+                    discover, understand, and interact with rather than simply
+                    placing mechanics in front of them.
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    Much of my current work focuses on creature gameplay,
+                    progression, worldbuilding, player research systems, and
+                    building playable prototypes that allow ideas to be tested
+                    and improved through iteration.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+
+        <p class="section-number">02 / FEATURED WORK</p>
+
+        <h2>Projects</h2>
+
+
+        <!-- BOXELS -->
+        <article class="project-card">
+
+            <div class="project-number">01</div>
+
+            <div class="project-content">
+
+                <p class="project-type">
+                    CREATURE GAME • GAMEPLAY DESIGN • SYSTEMS
+                </p>
+
+                <h3>BOXELS</h3>
+
+                <p>
+                    An original creature-focused game centered around exploration,
+                    discovery, research, creature behavior, progression, and
+                    systemic worldbuilding.
+                </p>
+
+                <div class="tags">
+                    <span>Creature Design</span>
+                    <span>Gameplay Systems</span>
+                    <span>Worldbuilding</span>
+                    <span>Game Design</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    CASE STUDY COMING SOON →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- ECHODEX -->
+        <article class="project-card">
+
+            <div class="project-number">02</div>
+
+            <div class="project-content">
+
+                <p class="project-type">
+                    C++ • GAMEPLAY PROGRAMMING • PROTOTYPE
+                </p>
+
+                <h3>BOXELS EchoDex Prototype</h3>
+
+                <p>
+                    A playable C++ research-terminal prototype featuring creature
+                    discovery, research progression, researcher profiles,
+                    upgrades, region unlocking, save systems, and an interactive
+                    creature database.
+                </p>
+
+                <div class="tags">
+                    <span>C++</span>
+                    <span>Gameplay Programming</span>
+                    <span>Systems Design</span>
+                    <span>UI / UX</span>
+                    <span>Git</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    CASE STUDY COMING SOON →
+                </a>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+
+        <p class="section-number">03 / SKILLS</p>
+
+        <h2>What I Work With</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-group">
+                <h3>Programming</h3>
+
+                <ul>
+                    <li>C++</li>
+                    <li>Object-Oriented Programming</li>
+                    <li>Gameplay Programming</li>
+                    <li>Data-Driven Systems</li>
+                </ul>
+            </div>
+
+
+            <div class="skill-group">
+                <h3>Game Design</h3>
+
+                <ul>
+                    <li>Creature Design</li>
+                    <li>Gameplay Systems</li>
+                    <li>Progression Design</li>
+                    <li>Gameplay Prototyping</li>
+                    <li>Worldbuilding</li>
+                </ul>
+            </div>
+
+
+            <div class="skill-group">
+                <h3>Tools</h3>
+
+                <ul>
+                    <li>Godot 4</li>
+                    <li>Visual Studio</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Blender</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section id="education">
+
+        <p class="section-number">04 / EDUCATION</p>
+
+        <h2>Full Sail University</h2>
+
+        <div class="education-card">
+
+            <div>
+                <h3>Bachelor of Science — Game Development</h3>
+
+                <p>January 2026 — Present</p>
+            </div>
+
+            <div>
+                <p>
+                    Coursework focused on programming, C++, software development,
+                    systems programming, version control, debugging, and game
+                    development workflows.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+        <p class="section-number">05 / CONTACT</p>
+
+        <h2>Let's build something.</h2>
+
+        <p class="contact-text">
+            I'm interested in gameplay programming, gameplay design,
+            creature systems, and game development opportunities.
+        </p>
+
+        <div class="contact-links">
+
+            <a href="https://github.com/itzpvlmz"
+               target="_blank">
+                GitHub →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Logan Ancell</p>
+        <p>Built with HTML, CSS & GitHub Pages</p>
+    </footer>
 
 </body>
+
 </html>

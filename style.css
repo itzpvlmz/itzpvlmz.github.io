@@ -277,6 +277,22 @@ mask-image: linear-gradient(
         border-color 0.3s ease;
 }
 
+.project-link {
+    display: inline-block;
+    margin-top: 20px;
+
+    color: #ff8c42;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.project-link:hover {
+    color: #ffffff;
+    transform: translateX(4px);
+}
 
 /* Animated gradient inside every card */
 .card::before,

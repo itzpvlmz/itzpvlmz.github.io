@@ -480,6 +480,8 @@ li {
     color: #ff8c42;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .contact-links a:hover {

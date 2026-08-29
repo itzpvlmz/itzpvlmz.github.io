@@ -475,7 +475,8 @@ li {
     flex-wrap: wrap;
 }
 
-.contact-links a {
+.contact-links a,
+.contact-email {
     color: #ff8c42;
     text-decoration: none;
     font-weight: bold;

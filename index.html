@@ -3,212 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logan Ancell | Game Developer</title>
+    <meta name="description" content="Logan Ancell's development portfolio: websites, application interfaces, automation, and games. Explore technical skills and selected work.">
+    <meta name="theme-color" content="#07111f">
+    <title>Logan Ancell | Web, Software & Game Development</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav class="navbar">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <a href="index.html" class="logo">LOGAN ANCELL</a>
             <div class="nav-links">
                 <a href="#about">About</a>
-                <a href="#projects">Projects</a>
+                <a href="#capabilities">What I Build</a>
+                <a href="#projects">Work</a>
                 <a href="#skills">Skills</a>
-                <a href="#education">Education</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
-
     <header class="hero">
-        <div class="hero-gradient"></div>
-
+        <div class="hero-gradient" aria-hidden="true"></div>
         <div class="hero-content">
-            <p class="hero-tag">GAME DEVELOPER • GAMEPLAY DESIGNER</p>
-            <h1>Building creatures, systems, and worlds players want to explore.</h1>
-            <p class="hero-text">
-                Game Development student focused on gameplay programming, creature design,
-                progression systems, and interactive player experiences.
-            </p>
-
+            <p class="hero-tag">INDEPENDENT DEVELOPER · PAHRUMP, NEVADA</p>
+            <h1>Websites. Applications.<br>Interactive experiences.</h1>
+            <p class="hero-text">I'm Logan. I build websites, develop application interfaces, explore automation and AI integration, and create games. I turn ideas into working projects, then test and refine how they feel to use.</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="https://github.com/itzpvlmz" target="_blank" class="btn btn-secondary">GitHub</a>
+                <a href="#projects" class="btn btn-primary">Explore My Work <span aria-hidden="true">↗</span></a>
+                <a href="mailto:loganancell@yahoo.com" class="btn btn-secondary">Get in Touch</a>
+            </div>
+            <div class="hero-topics" aria-label="Areas of work">
+                <span>Web development</span><span>Software & interfaces</span><span>Automation</span><span>Game development</span>
             </div>
         </div>
     </header>
-
-    <main class="page-container">
-
+    <main class="page-container" id="main">
         <section id="about" class="section">
-            <div class="section-header">
-                <span>01</span>
-                <h2>About Me</h2>
-            </div>
-
+            <div class="section-header"><span aria-hidden="true">01</span><h2>A broader technical toolkit.</h2></div>
             <div class="card-grid two-col">
-                <div class="card">
-                    <h3>Who I Am</h3>
-                    <p>
-                        I'm Logan Ancell, a game development student and independent developer
-                        with a strong interest in gameplay systems, creature design, and worldbuilding.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>What I Focus On</h3>
-                    <p>
-                        My current work focuses on designing systems that players can discover,
-                        understand, and interact with. Especially creature gameplay, progression,
-                        research systems, and playable prototypes. My goal is to continue growing
-                        as a gameplay programmer and designer while building polished, data-driven
-                        gameplay systems and production-ready prototypes.
-                    </p>
-                </div>
+                <article class="card">
+                    <h3>Developer & Problem Solver</h3>
+                    <p>I'm a Game Development B.S. student at Full Sail University and an independent developer whose work now spans websites, software interfaces, automation projects, and games. I enjoy figuring out how a system works and making it easier for someone else to use.</p>
+                </article>
+                <article class="card">
+                    <h3>How I Work</h3>
+                    <p>I break a project into practical features, build a usable version, and improve it through testing and feedback. My background in customer service, management, and security operations brings clear communication, attention to detail, and experience following established procedures.</p>
+                </article>
             </div>
         </section>
-
-        <section id="projects" class="section">
-            <div class="section-header">
-                <span>02</span>
-                <h2>Featured Projects</h2>
-            </div>
-
+        <section id="capabilities" class="section">
+            <div class="section-header"><span aria-hidden="true">02</span><h2>What I Build</h2></div>
             <div class="card-grid">
-                <div class="project-card">
-                    <img src="images/boxels-cover.png"
-                         alt="BOXELS game artwork featuring a researcher and elemental creatures"
-                         class="project-image">
-                    <div class="project-top">
-                        <p class="project-label">CREATURE DESIGN • SYSTEMS</p>
-                        <h3>BOXELS</h3>
-                    </div>
-                    <p>
-                        An original creature-focused game centered around exploration, discovery,
-                        research, progression, creature behavior, and systemic worldbuilding.
-                    </p>
-                    <div class="tags">
-                        <span>Creature Design</span>
-                        <span>Gameplay Systems</span>
-                        <span>Worldbuilding</span>
-                        <span>Game Design</span>
-                    </div>
-                    <span class="project-link">Repository Private</span>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-top">
-                        <p class="project-label">C++ • GAMEPLAY PROTOTYPE</p>
-                        <h3>BOXELS EchoDex Prototype</h3>
-                    </div>
-                    <p>
-                        A C++ prototype featuring researcher profiles, creature discovery,
-                        progression systems, region unlocking, save systems, and an interactive database.
-                    </p>
-                    <div class="tags">
-                        <span>C++</span>
-                        <span>Gameplay Programming</span>
-                        <span>UI / UX</span>
-                        <span>Git</span>
-                    </div>
-<a href="https://youtu.be/USU3MhG3z7o"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="project-link">
-    Watch Demo →
-</a>
-<a href="projects/echodex.html" class="project-link">
-    View Case Study →
-</a>
-                    
-                </div>
+                <article class="card capability">
+                    <p class="project-label">WEB DEVELOPMENT</p><h3>Websites With Personality</h3>
+                    <p>Business websites and portfolios with responsive layouts, interactive sections, animated backgrounds, and clear navigation. I refine the experience for both desktop and mobile use.</p>
+                    <div class="tags"><span>HTML & CSS</span><span>Responsive Design</span><span>Interactive UI</span></div>
+                </article>
+                <article class="card capability">
+                    <p class="project-label">APPLICATION DEVELOPMENT</p><h3>Interfaces & Software Systems</h3>
+                    <p>Application screens, custom front ends, and reusable program logic. My work includes C++ applications, structured data, navigation flows, and an operating-system-style interface for an emulator project.</p>
+                    <div class="tags"><span>C++</span><span>Application Logic</span><span>UI / UX</span></div>
+                </article>
+                <article class="card capability">
+                    <p class="project-label">AUTOMATION & AI</p><h3>Practical Workflow Tools</h3>
+                    <p>I work on automation projects and explore AI integration to simplify repeat tasks. I also use AI-assisted development to support prototyping, troubleshooting, and iteration.</p>
+                    <div class="tags"><span>Automation Projects</span><span>AI Integration</span><span>Prototyping</span></div>
+                </article>
+                <article class="card capability">
+                    <p class="project-label">GAME DEVELOPMENT</p><h3>Systems You Can Play</h3>
+                    <p>Gameplay prototypes, progression systems, save data, and interactive worlds. Game development is where I bring programming, interface design, and player feedback together.</p>
+                    <div class="tags"><span>Godot</span><span>Gameplay Programming</span><span>Systems Design</span></div>
+                </article>
             </div>
         </section>
-
+        <section id="projects" class="section">
+            <div class="section-header"><span aria-hidden="true">03</span><h2>Selected Work</h2></div>
+            <p class="section-intro">A look at the websites, interfaces, and gameplay systems I've worked on.</p>
+            <div class="card-grid">
+                <article class="project-card">
+                    <p class="project-label">WEBSITE · DESIGN & DEVELOPMENT</p>
+                    <h3>EXL Website</h3>
+                    <p>A service-focused website with a constellation background, interactive service panels, and guided inquiry selections.</p>
+                    <ul class="project-details">
+                        <li><strong>My work:</strong> Page layout, visual interactions, service presentation, and design iteration.</li>
+                        <li><strong>Focus:</strong> Making a distinctive visual style work alongside readable content and clear navigation.</li>
+                    </ul>
+                    <div class="tags"><span>Web Design</span><span>Animation</span><span>UI / UX</span></div>
+                </article>
+                <article class="project-card">
+                    <p class="project-label">SOFTWARE · CUSTOM INTERFACE</p>
+                    <h3>Emulator Interface</h3>
+                    <p>A custom operating-system-style interface developed for a friend's emulator project.</p>
+                    <ul class="project-details">
+                        <li><strong>My work:</strong> Interface development and translating project requests into usable screens.</li>
+                        <li><strong>Focus:</strong> Organizing functions around a clear, consistent user experience.</li>
+                    </ul>
+                    <div class="tags"><span>Custom Front End</span><span>Interface Design</span><span>Problem Solving</span></div>
+                </article>
+                <article class="project-card">
+                    <p class="project-label">C++ · PLAYABLE PROTOTYPE</p>
+                    <h3>BOXELS EchoDex</h3>
+                    <p>A research-terminal application with player profiles, an interactive creature database, progression, region unlocking, and save systems.</p>
+                    <ul class="project-details">
+                        <li><strong>My work:</strong> C++ programming, structured data, keyboard navigation, and save/load flows.</li>
+                        <li><strong>Focus:</strong> Testing application states, refining feedback, and building reusable systems.</li>
+                    </ul>
+                    <div class="tags"><span>C++</span><span>Visual Studio</span><span>Testing & Debugging</span></div>
+                    <div class="project-actions">
+                        <a href="projects/echodex.html" class="project-link">View Case Study <span aria-hidden="true">→</span></a>
+                        <a href="https://youtu.be/USU3MhG3z7o" target="_blank" rel="noopener noreferrer" class="project-link">Watch Demo <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <p class="project-label">WEB · PERSONAL PORTFOLIO</p>
+                    <h3>This Portfolio</h3>
+                    <p>A responsive HTML and CSS site that brings my technical skills and project work into one place.</p>
+                    <ul class="project-details">
+                        <li><strong>My work:</strong> Content structure, responsive styling, navigation, and ongoing updates.</li>
+                        <li><strong>Focus:</strong> Keeping the site accessible, readable, and easy to explore on different screen sizes.</li>
+                    </ul>
+                    <div class="tags"><span>HTML</span><span>CSS</span><span>GitHub Pages</span></div>
+                    <a href="https://github.com/itzpvlmz/itzpvlmz.github.io" target="_blank" rel="noopener noreferrer" class="project-link">View Source <span aria-hidden="true">↗</span></a>
+                </article>
+            </div>
+        </section>
         <section id="skills" class="section">
-            <div class="section-header">
-                <span>03</span>
-                <h2>Skills</h2>
-            </div>
-
+            <div class="section-header"><span aria-hidden="true">04</span><h2>Skills & Tools</h2></div>
             <div class="card-grid three-col">
-                <div class="card">
-                    <h3>Programming</h3>
-                    <ul>
-                        <li>C++</li>
-                        <li>Object-Oriented Programming</li>
-                        <li>Gameplay Programming</li>
-                        <li>Data-Driven Systems</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h3>Game Design</h3>
-                    <ul>
-                        <li>Creature Design</li>
-                        <li>Gameplay Systems</li>
-                        <li>Progression Design</li>
-                        <li>Gameplay Prototyping</li>
-                        <li>Storyboarding</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>Godot 4</li>
-                        <li>Visual Studio</li>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                        <li>AI- Assisted Development & Prompting</li>
-                    </ul>
-                </div>
+                <article class="card"><h3>Development</h3><ul>
+                    <li>C++ & object-oriented programming</li><li>HTML & CSS</li><li>Structured, data-driven systems</li><li>Website & application interfaces</li><li>Gameplay & progression systems</li>
+                </ul></article>
+                <article class="card"><h3>Testing & Workflow</h3><ul>
+                    <li>Debugging & issue reproduction</li><li>Functional & navigation testing</li><li>Save/load validation</li><li>Git, GitHub & issue tracking</li><li>Documentation & iterative refinement</li>
+                </ul></article>
+                <article class="card"><h3>Creative & Technical Tools</h3><ul>
+                    <li>Visual Studio</li><li>Godot</li><li>Blender & Aseprite</li><li>AI-assisted development</li><li>UI/UX planning & prototyping</li>
+                </ul></article>
             </div>
         </section>
-
         <section id="education" class="section">
-            <div class="section-header">
-                <span>04</span>
-                <h2>Education</h2>
-            </div>
-
-            <div class="card">
-                <h3>Full Sail University</h3>
-                <p><strong>Bachelor of Science — Game Development</strong></p>
-                <p>January 2026 — Present</p>
-                <p>
-                    Coursework includes programming, C++, software development,
-                    systems programming, debugging, and version control.
-                </p>
-            </div>
+            <div class="section-header"><span aria-hidden="true">05</span><h2>Education</h2></div>
+            <article class="card education-card">
+                <div><p class="project-label">JANUARY 2026 – PRESENT</p><h3>Full Sail University</h3><p><strong>Bachelor of Science in Game Development · In Progress</strong></p></div>
+                <p>Coursework includes C++, object-oriented programming, software development, debugging, systems programming, and version control.</p>
+            </article>
         </section>
-
         <section id="contact" class="section">
-            <div class="section-header">
-                <span>05</span>
-                <h2>Contact</h2>
-            </div>
-
-            <div class="card">
-                <p>
-                    Interested in gameplay programming, gameplay design, creature systems,
-                    and game development opportunities.
-                </p>
+            <div class="section-header"><span aria-hidden="true">06</span><h2>Let's Build Something.</h2></div>
+            <div class="card contact-card">
+                <p>Open to conversations about web and software development, IT support, technical projects, and game development opportunities.</p>
                 <div class="contact-links">
-                    <a href="https://github.com/itzpvlmz" target="_blank">GitHub</a>
-                    <span class="contact-email">Email: business@duckiegames.com</span>
-                    <a href="docs/Logan-Ancell-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                    <a href="mailto:loganancell@yahoo.com">loganancell@yahoo.com</a>
+                    <a href="mailto:loganancell@yahoo.com?subject=Resume%20request">Request Resume <span aria-hidden="true">↗</span></a>
+                    <a href="https://github.com/itzpvlmz" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
         </section>
-
     </main>
-
-    <footer class="footer">
-        <p>© 2026 Logan Ancell</p>
-        <p>Built with HTML, CSS, and GitHub Pages</p>
-    </footer>
-
+    <footer class="footer"><p>© 2026 Logan Ancell</p><p>Web · Software · Games</p></footer>
 </body>
 </html>

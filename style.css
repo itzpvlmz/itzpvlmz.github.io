@@ -71,8 +71,6 @@ mask-image: linear-gradient(
     z-index: 1;
 }
 
-}
-
 /* NAVBAR */
 .navbar {
     position: sticky;
@@ -802,4 +800,49 @@ li {
 .case-media:hover .case-image {
     transform: scale(1.015);
     filter: brightness(1.06);
+}
+
+/* Portfolio overview and accessible navigation */
+section[id], main[id] { scroll-margin-top: 110px; }
+.skip-link { position: fixed; top: -80px; left: 16px; z-index: 2000; padding: 12px 18px; background: #fff; color: #07111f; border-radius: 8px; }
+.skip-link:focus { top: 12px; }
+a:focus-visible { outline: 3px solid #ffb48a; outline-offset: 5px; }
+.hero { min-height: auto; padding: 70px 40px; }
+.hero-content { max-width: 940px; }
+.hero h1 { font-size: clamp(2.6rem, 5.8vw, 4.7rem); line-height: 1.06; letter-spacing: -2px; }
+.hero-text { max-width: 760px; }
+.hero-topics { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 36px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.16); color: #d6dce5; font-size: .88rem; }
+.section-intro { max-width: 720px; color: #bdcada; margin: -8px 0 24px; }
+.section-header span { flex-shrink: 0; }
+.section-header h2 { line-height: 1.2; }
+.project-details { margin-top: 18px; }
+.project-details li { font-size: .94rem; }
+.project-details strong { color: #fff; }
+.project-actions { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+.education-card { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; }
+.contact-links a { overflow-wrap: anywhere; }
+.contact-card { padding: 32px; }
+@media (max-width: 900px) {
+    .hero { margin: 20px 24px 0; padding: 48px 28px; }
+    .education-card { grid-template-columns: 1fr; gap: 16px; }
+}
+@media (max-width: 700px) {
+    section[id], main[id] { scroll-margin-top: 145px; }
+    .nav-container { padding: 14px 20px; }
+    .nav-links { gap: 8px 18px; font-size: .9rem; }
+    .nav-links a { padding: 4px 0; }
+    .hero { margin: 16px 16px 0; padding: 36px 22px; }
+    .hero h1 { font-size: clamp(2.15rem, 9vw, 3.4rem); letter-spacing: -1px; }
+    .hero-tag { font-size: .75rem; letter-spacing: 1.2px; }
+    .hero-text { font-size: 1rem; }
+    .page-container { padding: 24px 16px 48px; }
+    .section { margin-top: 32px; }
+    .section-header h2 { font-size: 1.55rem; }
+    .card, .project-card, .contact-card { padding: 22px; }
+    .contact-links { flex-direction: column; gap: 16px; }
+    .hero-buttons .btn { text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
 }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Logan Ancell about websites, applications, technical projects, and game development.">
+    <meta name="theme-color" content="#07111f">
+    <title>Contact | Logan Ancell</title>
+    <link rel="stylesheet" href="style.css?v=20261027-contact">
+    <script src="contact.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo">LOGAN ANCELL</a>
+            <div class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#capabilities">What I Build</a>
+                <a href="index.html#projects">Work</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="contact.html" aria-current="page">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <main id="main" class="page-container contact-page">
+        <a class="back-link" href="index.html">← Back to portfolio</a>
+        <div class="contact-layout">
+            <section class="contact-intro" aria-labelledby="contact-title">
+                <p class="hero-tag">LET'S TALK</p>
+                <h1 id="contact-title">What do you<br>have in mind?</h1>
+                <p>Tell me a little about your project, an opportunity, or what you'd like to build. Include your name and email so I know how to reach you.</p>
+                <a class="direct-email" href="mailto:business@duckiegames.com">business@duckiegames.com</a>
+                <p class="contact-note">Prefer your own email app? You can also email me directly.</p>
+            </section>
+            <section class="card message-card" aria-labelledby="message-title">
+                <h2 id="message-title">Write a message</h2>
+                <form id="contact-form" action="mailto:business@duckiegames.com" method="post" enctype="text/plain">
+                    <div class="form-field">
+                        <label for="sender-name">Your name</label>
+                        <input id="sender-name" name="name" type="text" autocomplete="name" maxlength="120" required placeholder="Your full name">
+                    </div>
+                    <div class="form-field">
+                        <label for="sender-email">Your email</label>
+                        <input id="sender-email" name="email" type="email" autocomplete="email" maxlength="254" required placeholder="you@example.com">
+                    </div>
+                    <div class="form-field">
+                        <label for="sender-message">Your message</label>
+                        <textarea id="sender-message" name="message" rows="7" maxlength="5000" required placeholder="Tell me about your project or opportunity…"></textarea>
+                    </div>
+                    <p class="form-help" id="email-help">This opens a draft addressed to me in your email app. Review it there, then send.</p>
+                    <button class="btn btn-primary" type="submit" aria-describedby="email-help">Open Email Draft <span aria-hidden="true">↗</span></button>
+                    <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+                    <noscript><p class="form-help">Your browser will open your email app to continue. You can also email business@duckiegames.com directly.</p></noscript>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="footer"><p>© 2026 Logan Ancell</p><p>Web · Software · Games</p></footer>
+</body>
+</html>

@@ -878,3 +878,40 @@ a:focus-visible { outline: 3px solid #ffb48a; outline-offset: 5px; }
 @media (max-width: 700px) {
     .screenshot-link { margin: -22px -22px 22px; }
 }
+
+/* Dedicated contact page */
+.contact-page { min-height: calc(100vh - 180px); padding-top: 32px; }
+.back-link { color: #bdcada; text-decoration: none; font-size: .9rem; }
+.back-link:hover { color: #ffad7c; }
+.contact-layout { display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: start; padding: 44px 0 24px; }
+.contact-intro h1 { font-size: clamp(2.5rem, 4.5vw, 4.1rem); letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 24px; }
+.contact-intro > p:not(.hero-tag) { color: #bdcada; max-width: 460px; }
+.direct-email { display: inline-block; color: #ffad7c; font-size: 1.1rem; text-decoration: none; margin: 28px 0 12px; overflow-wrap: anywhere; }
+.contact-note { font-size: .88rem; }
+.message-card { padding: 32px; }
+.message-card:hover { transform: none; }
+.message-card h2 { font-size: 1.5rem; margin-bottom: 24px; }
+.form-field { margin-bottom: 20px; }
+.form-field label { display: block; margin-bottom: 8px; font-size: .92rem; font-weight: bold; }
+.form-field input, .form-field textarea {
+    display: block; width: 100%; border: 1px solid #43546a; border-radius: 10px;
+    padding: 13px 14px; background: #091421; color: #fff; font: inherit;
+}
+.form-field textarea { min-height: 170px; resize: vertical; }
+.form-field input::placeholder, .form-field textarea::placeholder { color: #92a2b7; }
+.form-field input:focus, .form-field textarea:focus { outline: 2px solid #ffad7c; outline-offset: 2px; border-color: #ffad7c; }
+.form-help { color: #bdcada; font-size: .85rem; margin: 0 0 18px; }
+.message-card button { font: inherit; font-weight: bold; border: 0; cursor: pointer; }
+.message-card button:focus-visible { outline: 3px solid #ffb48a; outline-offset: 5px; }
+.form-status { color: #d6dce5; font-size: .88rem; margin-top: 16px; }
+.nav-links a[aria-current="page"] { color: #ffad7c; }
+@media (max-width: 900px) {
+    .contact-layout { grid-template-columns: 1fr; gap: 32px; padding-top: 32px; }
+    .contact-intro > p:not(.hero-tag) { max-width: 650px; }
+}
+@media (max-width: 700px) {
+    .contact-page { padding-top: 24px; }
+    .message-card { padding: 24px; }
+    .contact-intro h1 { font-size: 2.8rem; }
+    .message-card button { width: 100%; }
+}

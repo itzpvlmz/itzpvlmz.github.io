@@ -1,34 +1,24 @@
 'use strict';
-
-function buildContactMailto(name, email, message) {
-    const subject = 'Portfolio inquiry from ' + name.trim();
-    const body = 'Name: ' + name.trim() + '\nEmail: ' + email.trim() +
-        '\n\n' + message.trim();
-    return 'mailto:business@duckiegames.com?subject=' +
-        encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-}
-
-if (typeof document !== 'undefined') {
+(function () {
     const form = document.getElementById('contact-form');
-    if (form) {
-        form.addEventListener('submit', function (event) {
-            event.preventDefault();
-            if (!form.reportValidity()) return;
-            const name = form.elements.name.value.trim();
-            const email = form.elements.email.value.trim();
-            const message = form.elements.message.value.trim();
-            const status = document.getElementById('form-status');
-            if (!name || !message) {
-                status.textContent = 'Please enter your name and a message.';
-                return;
-            }
-            const url = buildContactMailto(name, email, message);
-            window.location.href = url;
-            status.textContent = 'Your email app should open with a draft. If it does not, copy your message and email business@duckiegames.com directly.';
-        });
+    if (!form) return;
+    const resumeRequest = new URLSearchParams(window.location.search).get('type') === 'resume';
+    if (resumeRequest) {
+        document.getElementById('contact-title').textContent = 'Request my resume.';
+        document.getElementById('message-title').textContent = 'Request a resume';
+        document.getElementById('email-subject').value = 'Resume request from portfolio';
+        document.getElementById('sender-message').value = "Hi Logan, I'd like to request a copy of your resume. Thank you!";
+        form.querySelector('button[type="submit"]').textContent = 'Send Resume Request';
     }
-}
-
-if (typeof module !== 'undefined') {
-    module.exports = { buildContactMailto };
-}
+    const textFields = [form.elements.namedItem('name'), form.elements.namedItem('message')];
+    textFields.forEach(function (field) {
+        function validate() {
+            field.setCustomValidity(field.value.trim() ? '' : 'Please complete this field.');
+        }
+        field.addEventListener('input', validate);
+        validate();
+    });
+    form.addEventListener('submit', function () {
+        document.getElementById('form-status').textContent = 'Submitting your message…';
+    });
+})();

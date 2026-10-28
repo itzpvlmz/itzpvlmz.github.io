@@ -6,8 +6,8 @@
     <meta name="description" content="Contact Logan Ancell about websites, applications, technical projects, and game development.">
     <meta name="theme-color" content="#07111f">
     <title>Contact | Logan Ancell</title>
-    <link rel="stylesheet" href="style.css?v=20261027-contact">
-    <script src="contact.js" defer></script>
+    <link rel="stylesheet" href="style.css?v=20261027-update3">
+    <script src="contact.js?v=20261027-direct" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -35,7 +35,12 @@
             </section>
             <section class="card message-card" aria-labelledby="message-title">
                 <h2 id="message-title">Write a message</h2>
-                <form id="contact-form" action="mailto:business@duckiegames.com" method="post" enctype="text/plain">
+                <form id="contact-form" action="https://formsubmit.co/business@duckiegames.com" method="POST">
+                    <input type="hidden" name="_subject" id="email-subject" value="Portfolio inquiry">
+                    <input type="hidden" name="_next" value="https://itzpvlmz.github.io/thanks.html">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_url" value="https://itzpvlmz.github.io/contact.html">
+                    <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
                     <div class="form-field">
                         <label for="sender-name">Your name</label>
                         <input id="sender-name" name="name" type="text" autocomplete="name" maxlength="120" required placeholder="Your full name">
@@ -48,10 +53,10 @@
                         <label for="sender-message">Your message</label>
                         <textarea id="sender-message" name="message" rows="7" maxlength="5000" required placeholder="Tell me about your project or opportunity…"></textarea>
                     </div>
-                    <p class="form-help" id="email-help">This opens a draft addressed to me in your email app. Review it there, then send.</p>
-                    <button class="btn btn-primary" type="submit" aria-describedby="email-help">Open Email Draft <span aria-hidden="true">↗</span></button>
+                    <p class="form-help" id="email-help">Your message will be submitted to business@duckiegames.com. Email delivery by FormSubmit.</p>
+                    <button class="btn btn-primary" type="submit" aria-describedby="email-help">Send Message <span aria-hidden="true">↗</span></button>
                     <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
-                    <noscript><p class="form-help">Your browser will open your email app to continue. You can also email business@duckiegames.com directly.</p></noscript>
+                    <noscript><p class="form-help">You can submit this form without JavaScript.</p></noscript>
                 </form>
             </section>
         </div>

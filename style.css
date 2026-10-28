@@ -919,3 +919,33 @@ a:focus-visible { outline: 3px solid #ffb48a; outline-offset: 5px; }
 .thanks-card { max-width: 720px; margin: 60px auto; padding: 40px; }
 .thanks-card h1 { font-size: 2.4rem; line-height: 1.2; margin-bottom: 20px; }
 .thanks-card .btn { margin-top: 24px; }
+
+/* Branding collection preview */
+.branding-preview { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 170px 150px auto; margin: -24px -24px 24px; gap: 2px; background: #263246; color: #dce6f2; text-decoration: none; }
+.brand-tile { background: #f2f3f5; overflow: hidden; }
+.brand-tile-wide { grid-column: 1 / -1; }
+.brand-tile img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.branding-preview .screenshot-caption { grid-column: 1 / -1; }
+.branding-preview:hover .screenshot-caption { color: #ffad7c; }
+.branding-page { padding-top: 32px; }
+.branding-intro { max-width: 800px; margin: 48px 0; }
+.branding-intro h1 { font-size: clamp(2.5rem,5vw,4.3rem); letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 24px; }
+.branding-intro > p:last-child { color: #bdcada; font-size: 1.08rem; }
+.brand-showcase { display: grid; grid-template-columns: .75fr 1.25fr; align-items: center; gap: 36px; padding: 40px 0; border-top: 1px solid rgba(255,255,255,.12); }
+.brand-copy h2 { font-size: 2rem; margin-bottom: 16px; }
+.brand-copy > p:not(.project-label) { color: #bdcada; }
+.brand-showcase figure { margin: 0; min-width: 0; }
+.brand-showcase img { display: block; width: 100%; height: auto; border-radius: 16px; }
+.brand-showcase figcaption { color: #aeb8c5; font-size: .8rem; margin-top: 12px; }
+.branding-contact { margin-top: 32px; }
+.branding-contact h2 { margin-bottom: 12px; }
+.branding-contact .btn { margin-top: 22px; }
+@media(max-width:800px) {
+    .brand-showcase { grid-template-columns: 1fr; gap: 24px; }
+}
+@media(max-width:700px) {
+    .branding-preview { margin: -22px -22px 22px; grid-template-rows: 140px 120px auto; }
+    .branding-intro { margin: 32px 0; }
+    .brand-showcase { padding: 28px 0; }
+}
+.capability:last-child:nth-child(odd) { grid-column: 1 / -1; }
